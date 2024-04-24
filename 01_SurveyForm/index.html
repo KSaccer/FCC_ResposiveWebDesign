@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Feedback</h1>
+    <p id="description">Your feedback is much apprecited!</p>
+    <form id="survey-form">
+      
+      <!--  BASIC CUSTOMER DATA  -->
+      <fieldset>
+        <label id="name-label" for="name">Name: 
+          <input 
+            id="name" 
+            type="text" 
+            required 
+            placeholder="Enter your name"
+          >
+        </label>
+        <label id="email-label" for="email">Email: 
+          <input 
+            id="email" 
+            type="email" 
+            required 
+            placeholder="Enter your email address"
+          >
+        </label>
+        <label id="number-label" for="number">Customer ID: 
+          <input 
+            id="number" 
+            type="number" 
+            min=1000 
+            max=9999 
+            placeholder="Enter your customer id"
+          >
+        </label>
+      </fieldset>
+
+     <!--  REFERRING OPTIONS  -->
+      <fieldset>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Google ad</option>
+            <option value="2">Facebook</option>
+            <option value="3">Friends or acquaintances</option>
+          </select>
+        </label>
+      </fieldset>
+     
+      <!--  PAYMENT METHODS  -->
+      <fieldset>
+        <legend>Your preferred payment method: </legend>
+        <label for="visa-payment">
+          <input 
+            id="visa-payment" 
+            name="payment" 
+            value="visa" 
+            type="radio"
+          >Visa
+        </label>
+        <label for="bank-payment">
+          <input 
+            id="bank-payment" 
+            name="payment" 
+            value="bank" 
+            type="radio"
+          >Bank transfer
+        </label>
+        <label for="paypal-payment">
+          <input 
+            id="paypal-payment" 
+            name="payment" 
+            value="paypal" 
+            type="radio"
+          >PayPal
+        </label>
+      </fieldset>
+      
+      <!--  PRODUCT INTERESTS  -->
+      <fieldset>
+        <legend>Products you are interested in: </legend>
+        <label>
+          <input 
+            name="products" 
+            value="steel-darts"
+            type="checkbox"
+          >Steel darts
+        </label>
+        <label>
+          <input
+            name="products" 
+            value="soft-darts"
+            type="checkbox"
+          >Soft darts
+        </label>
+        <label>
+          <input 
+            name="products" 
+            value="dartboards"
+            type="checkbox"
+          >Dartboards
+        </label>
+      </fieldset>
+
+      <!--  MESSAGE  -->
+      <fieldset>
+        <legend>Tell us about your experience in our webshop: </legend>
+          <textarea>
+          </textarea>
+      </fieldset>
+      <input id="submit", type="submit", value="Submit">
+    </form>

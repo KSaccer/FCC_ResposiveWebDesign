@@ -1,0 +1,94 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #edf0f9;
+    padding: 20px;
+    color: #2f3547
+  }
+  
+  /* Form container styles */
+  #survey-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Title styles */
+  #title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Description styles */
+  #description {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Fieldset styles */
+  fieldset {
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  /* Legend styles */
+  legend {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown styles */
+  select {
+    appearance: none;
+  }
+  
+  /* Radio and Checkbox styles */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+    
+  }
+  
+  /* Submit button styles */
+  input[type="submit"] {
+    width: 100%;
+    background-color: #404e77;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7583aa;
+  }
